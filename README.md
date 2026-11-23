@@ -1,155 +1,161 @@
-# 📊 Uygulamalı Veri Analizi ve Keşifçi Veri Analitiği Projesi
+# 🛒 E-Ticaret Satış Analizi ve SQLite Veri Entegrasyonu
 
-![Python Version](https://img.shields.io/badge/python-3.10%2B-blue.svg)
-![License](https://img.shields.io/badge/license-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-completed-brightgreen.svg)
+![Python](https://img.shields.io/badge/Python-3.x-3776AB?style=for-the-badge&logo=python&logoColor=white)
+![Pandas](https://img.shields.io/badge/Pandas-Veri%20Analizi-150458?style=for-the-badge&logo=pandas&logoColor=white)
+![NumPy](https://img.shields.io/badge/NumPy-Sentetik%20Veri-013243?style=for-the-badge&logo=numpy&logoColor=white)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Görselleştirme-11557C?style=for-the-badge)
+![Seaborn](https://img.shields.io/badge/Seaborn-İstatistiksel%20Grafik-4C72B0?style=for-the-badge)
+![SQLite](https://img.shields.io/badge/SQLite-Veritabanı-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
+![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-F37626?style=for-the-badge&logo=jupyter&logoColor=white)
 
-Bu proje, karmaşık ve gerçek dünya veri kümeleri üzerinde uçtan uca veri temizleme, ön işleme, vektörel hesaplamalar, hipotez bazlı keşifçi veri analizi (EDA) ve görselleştirme süreçlerini gerçekleştirmek amacıyla geliştirilmiştir.
+## 📌 Proje Özeti
 
----
+Bu proje, sentetik olarak oluşturulan bir e-ticaret sipariş veri seti üzerinde uçtan uca **veri üretimi, keşifçi veri analizi (EDA), özellik mühendisliği (Feature Engineering), veri görselleştirme ve ilişkisel veritabanı (SQLite) sorgulama** süreçlerini kapsayan bir veri analitiği çalışmasıdır.
 
-## 📌 İçindekiler
-
-- [Proje Hakkında](#-proje-hakkında)
-- [Özellikler ve Analiz Adımları](#-özellikler-ve-analiz-adımları)
-- [Proje Dizini Yapısı](#-proje-dizini-yapısı)
-- [Kurulum ve Çalıştırma](#-kurulum-ve-çalıştırma)
-- [Kullanılan Teknolojiler ve Kütüphaneler](#-kullanılan-teknolojiler-ve-kütüphaneler)
-- [Veri Analitiği Metodolojisi](#-veri-analitiği-metodolojisi)
-- [Ekip ve Rol Dağılımı](#-ekip-ve-rol-dağılımı)
-- [Lisans ve İletişim](#-lisans-ve-iletişim)
+Proje kapsamında 300 adet e-ticaret siparişi Python ile üretilerek CSV formatında dışa aktarılmış, müşteri demografisi ve satış performansı çok boyutlu olarak incelenmiş, 5 farklı istatistiksel grafik tek bir panelde görselleştirilmiş ve işlenen veriler SQLite veritabanına aktarılarak SQL sorgularıyla doğrulanmıştır.
 
 ---
 
-## 🎯 Proje Hakkında
+## 🎯 Proje Kapsamı ve İş Akışı
 
-Bu çalışmada, ham veri kaynaklarından elde edilen veriler analiz edilebilir hale getirilmiş; veri kalitesi sorunları (eksik değerler, aykırı gözlemler, hatalı tipler) çözüme kavuşturulmuştur. İstatistiksel yöntemler ve vektörel hesaplamalar ile yeni öznitelikler (*feature engineering*) türetilmiş, iş sorularına yönelik çapraz tablolar ve dinamik grafiklerle karar destek çıktıları üretilmiştir.
-
-### 🏢 Proje Amaçları:
-- Ham verideki gürültüyü ve eksiklikleri veri bilimi metodolojileri ile gidermek.
-- `NumPy` ve `Pandas` kütüphanelerini kullanarak yüksek performanslı veri manipülasyonu sağlamak.
-- Veri seti içerisindeki gizli eğilimleri ve ilişkileri grafiksel (`Matplotlib` / `Seaborn`) olarak ortaya koymak.
-- Yönetici özeti ve analitik raporlama ile stratejik kararlara temel oluşturmak.
-
----
-
-## 🚀 Özellikler ve Analiz Adımları
-
-1. **Veri Kalitesi ve Ön İşleme:**
-   - Eksik veri (*Missing Values*) tespiti, medyan/ortalama veya mantıksal doldurma stratejileri.
-   - IQR (Interquartile Range) ve Z-Score yöntemleri ile aykırı değer tespiti ve temizliği.
-   - Veri tipi dönüşümleri (`datetime`, `categorical`, `numeric`).
-
-2. **Analitik Manipülasyon ve Öznitelik Mühendisliği:**
-   - Python kullanıcı tanımlı fonksiyonları ve vektörel hesaplamalar.
-   - İleri seviye `groupby`, `pivot_table` ve çoklu filtreleme operasyonları.
-   - Veri kümesini zenginleştiren türetilmiş değişkenler (*engineered features*).
-
-3. **Görselleştirme ve Grafik Yorumlama:**
-   - Histogram ve KDE dağılım grafikleri.
-   - Kutu grafikleri (*Box Plot*) ve aykırı değer analizi.
-   - Korelasyon ısı haritaları (*Heatmap*) ve saçılım grafikleri (*Scatter Plot*).
-   - Her grafik için sektörel ve analitik bulgu özetleri.
+1. **Sentetik Veri Üretimi:** `NumPy` ve `Pandas` kullanılarak 300 satırlık sipariş verisi oluşturulur ve `ecommerce_sales.csv` dosyasına kaydedilir.
+2. **Veri Keşfi ve Temel İstatistikler:** Veri tipleri, eksik değer durumu (`df.info()`), toplam sipariş, toplam satılan ürün adedi ve fiyat istatistikleri hesaplanır.
+3. **Özellik Mühendisliği (Feature Engineering):**
+   - `TotalPrice`: Birim fiyat ve sipariş adedi çarpılarak sipariş bazlı toplam tutar hesaplanır (`Price * Quantity`).
+   - `AgeGroup`: Müşteri yaşları **Genç (18–25)**, **Yetişkin (26–40)**, **Orta Yaş (41–60)** ve **60+** segmentlerine ayrılır.
+4. **Grup Bazlı Satış Analizleri:** Kategori gelirleri, ürün satış adetleri, şehir bazlı ciro, ödeme yöntemi tercihleri, yaş grubu harcamaları ve en yüksek tutarlı ilk 10 sipariş analiz edilir.
+5. **Veri Görselleştirme:** `Matplotlib` ve `Seaborn` kullanılarak 5 grafikten oluşan kapsamlı bir görsel analiz paneli oluşturulur.
+6. **SQLite Entegrasyonu:** İşlenen veri seti `ecommerce.db` veritabanındaki `orders` tablosuna aktarılır ve SQL sorguları ile kategori gelirleri ile İstanbul özelindeki en yüksek tutarlı siparişler raporlanır.
 
 ---
 
-## 📂 Proje Dizini Yapısı
+## 📊 Veri Seti Yapısı
+
+Veri seti başlangıçta **8 ham sütun** ve **300 eksik değersiz (non-null)** kayıttan oluşur; özellik mühendisliği aşamasında **2 yeni sütun** eklenir:
+
+| Sütun Adı | Veri Tipi | Açıklama |
+| :--- | :--- | :--- |
+| `OrderId` | `int64` | Benzersiz sipariş numarası (1 – 300) |
+| `Product` | `str` | Ürün adı *(Laptop, Tişört, Roman, Parfüm, Tava, Kulaklık, Pantolon, Defter, Ruj, Lamba)* |
+| `Category` | `str` | Ürün kategorisi *(Elektronik, Giyim, Kitap, Kozmetik, Ev)* |
+| `Price` | `int32` | Ürün birim fiyatı (50 – 5.000 TL aralığında) |
+| `Quantity` | `int32` | Sipariş edilen ürün adedi (1 – 5 adet) |
+| `CustomerAge` | `int32` | Müşteri yaşı (18 – 69 yaş aralığında) |
+| `City` | `str` | Siparişin verildiği şehir *(İstanbul, Ankara, İzmir, Bursa, Antalya)* |
+| `PaymentType` | `str` | Ödeme yöntemi *(Kredi Kartı, Kapıda Ödeme, Havale/EFT)* |
+| `TotalPrice` *(Türetilmiş)* | `int64` | Sipariş toplam tutarı (`Price * Quantity`) |
+| `AgeGroup` *(Türetilmiş)* | `str` | Müşteri yaş segmenti *(Genç, Yetişkin, Orta Yaş, 60+)* |
+
+---
+
+## 📈 Öne Çıkan Analiz Bulguları
+
+Notebook çalıştırıldığında üretilen mevcut veri seti üzerinden elde edilen temel metrikler aşağıdadır:
+
+### Genel Satış Özeti
+- **Toplam Sipariş Sayısı:** `300`
+- **Toplam Satılan Ürün Adedi:** `908`
+- **Toplam Ciro:** `2.442.812 TL`
+- **Ortalama Ürün Birim Fiyatı:** `2.679,06 TL`
+- **Fiyat Aralığı:** `101 TL` (Min) – `4.996 TL` (Max)
+- **En Yüksek Tutarlı Tek Sipariş:** `24.925 TL` (`OrderId: 106`)
+
+### Kırılım Bazlı Sonuçlar
+
+| Analiz Boyutu | Lider Segment / Değer | Öne Çıkan Detay |
+| :--- | :--- | :--- |
+| **En Yüksek Gelirli Kategori** | **Ev** (`638.082 TL`) | İkinci sırada **Elektronik** (`534.188 TL`), en düşük gelirde **Kozmetik** (`350.926 TL`) |
+| **En Çok Satılan Ürünler** | **Defter** ve **Ruj** (`109 adet`) | Üçüncü sırada **Kulaklık** (`107 adet`), en az satılan **Lamba** (`64 adet`) |
+| **En Yüksek Satışlı Şehir** | **İstanbul** (`529.911 TL`) | İstanbul'u **Antalya** (`502.270 TL`) ve **Ankara** (`494.010 TL`) takip ediyor |
+| **En Çok Tercih Edilen Ödeme** | **Kredi Kartı** (`111 sipariş` / `%37,0`) | **Kapıda Ödeme** (`95`) ve **Havale/EFT** (`94`) birbirine çok yakın dağılıyor |
+| **En Yüksek Harcama Yapan Yaş Grubu** | **Orta Yaş (41–60)** (`1.026.685 TL`) | Toplam cironun `%42`sinden fazlasını oluşturuyor; ikinci sırada **Yetişkin** (`698.312 TL`) |
+
+> **Not:** Veri seti rastgele sayı üretimi (`numpy.random`) ile oluşturulduğu için ilk hücre yeniden çalıştırıldığında sayısal değerler değişiklik gösterebilir.
+
+---
+
+## 🎨 Veri Görselleştirme
+
+Proje içerisinde `sns.set_theme(style="whitegrid")` teması ve `3x2` subplot yerleşimi (`figsize=(16, 14)`) kullanılarak 5 farklı grafik üretilir:
+
+1. **Kategorilere Göre Toplam Gelir** *(Bar Plot – `viridis` paleti)*
+2. **Şehirlere Göre Toplam Satış** *(Bar Plot – `magma` paleti)*
+3. **Ürün Fiyat Dağılımı** *(Histogram + KDE eğrisi – 20 bin)*
+4. **Müşteri Yaşı ve Harcama İlişkisi** *(Scatter Plot)*
+5. **Ödeme Yöntemlerine Göre Sipariş Sayısı** *(Count Plot – `Set2` paleti)*
+
+<!-- Grafiği PNG olarak kaydedip repoya eklerseniz aşağıdaki satırı aktif edebilirsiniz: -->
+<!-- ![E-Ticaret Analiz Paneli](images/dashboard.png) -->
+
+---
+
+## 🗄️ SQLite Veritabanı ve SQL Sorguları
+
+Analiz edilen DataFrame, Python'un yerleşik `sqlite3` kütüphanesi aracılığıyla `ecommerce.db` veritabanındaki `orders` tablosuna aktarılır ve aşağıdaki SQL sorguları çalıştırılır:
+
+```sql
+-- 1. Kategorilere göre toplam gelir raporu
+SELECT Category, SUM(TotalPrice) AS TotalRevenue
+FROM orders
+GROUP BY Category;
+
+-- 2. İstanbul ilindeki en yüksek tutarlı ilk 5 sipariş
+SELECT OrderId, Product, City, TotalPrice
+FROM orders
+WHERE City = 'İstanbul'
+ORDER BY TotalPrice DESC
+LIMIT 5;
+```
+
+**İstanbul En Yüksek Sipariş Çıktısı (Örnek):** `OrderId: 124` — Laptop (`23.765 TL`)
+
+---
+
+## 📁 Proje Dosya Yapısı
 
 ```text
-├── data/
-│   ├── raw/                 # Ham veri seti (CSV / JSON)
-│   └── processed/           # Temizlenmiş ve işlenmiş veri seti
-├── notebooks/
-│   └── main_analysis.ipynb  # Ana Jupyter Notebook analiz dosyası
-├── reports/
-│   └── Analiz_Raporu.pdf    # Detaylı PDF proje raporu
-├── src/
-│   ├── __init__.py
-│   ├── data_loader.py       # Veri yükleme ve tip düzenleme modülü
-│   ├── data_cleaning.py     # Eksik veri ve aykırı değer işleme fonksiyonları
-│   └── visualization.py    # Grafik ve görselleştirme fonksiyonları
-├── .gitignore               # Git tarafından yoksayılacak dosyalar
-├── requirements.txt         # Gerekli Python kütüphaneleri
-└── README.md                # Proje dokümantasyonu
+├── ecommerce_analysis.ipynb   # Ana analiz, görselleştirme ve SQLite notebook dosyası
+├── ecommerce_sales.csv        # Üretilen sentetik e-ticaret veri seti
+├── ecommerce.db               # Python üzerinden oluşturulan SQLite veritabanı
+└── README.md                  # Proje dokümantasyonu
 ```
 
 ---
 
-## 🛠 Kurulum ve Çalıştırma
+## ⚙️ Kurulum ve Çalıştırma
 
-Projeyi yerel bilgisayarınızda çalıştırmak için aşağıdaki adımları sırasıyla takip edebilirsiniz:
+Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleyebilirsiniz:
 
-### 1. Depoyu Klonlayın
+### 1. Repoyu Klonlayın
 ```bash
-git clone https://github.com/kullanici-adi/proje-adi.git
-cd proje-adi
+git clone [https://github.com/](https://github.com/)<kullanici-adiniz>/<repo-adiniz>.git
+cd <repo-adiniz>
 ```
 
-### 2. Sanal Ortam (Virtual Environment) Oluşturun ve Aktifleştirin
-**Linux / macOS:**
+### 2. Gerekli Kütüphaneleri Yükleyin
 ```bash
-python3 -m venv venv
-source venv/bin/activate
+pip install pandas numpy matplotlib seaborn jupyter
 ```
+*(Not: `sqlite3` Python standart kütüphanesinde yerleşik olarak gelir, ek kurulum gerektirmez.)*
 
-**Windows:**
-```cmd
-python -m venv venv
-venv\Scripts\activate
-```
-
-### 3. Bağımlılıkları Yükleyin
+### 3. Notebook'u Başlatın
 ```bash
-pip install --upgrade pip
-pip install -r requirements.txt
+jupyter notebook
 ```
-
-### 4. Jupyter Notebook'u Başlatın
-```bash
-jupyter notebook notebooks/main_analysis.ipynb
-```
-
-> **Not:** Jupyter Notebook arayüzünde tüm hücreleri baştan sona çalıştırmak için menüden **Kernel -> Restart & Run All** seçeneğini kullanabilirsiniz.
+Açılan arayüzden `.ipynb` dosyasını seçip hücreleri sırayla çalıştırabilirsiniz.
 
 ---
 
-## 🧰 Kullanılan Teknolojiler ve Kütüphaneler
+## 🚀 Geliştirilebilir Alanlar
 
-| Teknoloji / Kütüphane | Kullanım Amacı |
-| :--- | :--- |
-| **Python 3.10+** | Temel programlama dili |
-| **Pandas** | Veri manipülasyonu, filtreleme, gruplama ve pivot analizleri |
-| **NumPy** | Çok boyutlu diziler ve hızlı vektörel matris hesaplamaları |
-| **Matplotlib** | Temel çizimler ve eksen/etiket özelleştirmeleri |
-| **Seaborn** | İleri seviye istatistiksel veri görselleştirme |
-| **Jupyter Notebook** | Etkileşimli kodlama ve raporlama ortamı |
+- **Tekrarlanabilirlik (Reproducibility):** Sentetik veri üretim aşamasına `np.random.seed(42)` eklenerek her çalıştırmada tutarlı sonuçlar elde edilebilir.
+- **Gerçekçi Ürün-Kategori Eşleştirmesi:** Ürünlerin rastgele kategoriler yerine kendi gerçek kategorileriyle eşleşeceği bir sözlük (dictionary) yapısı kurulabilir.
+- **Zaman Serisi Analizi:** Sipariş tarihi (`OrderDate`) sütunu eklenerek aylık/mevsimsel satış trendleri incelenebilir.
+- **Seaborn Güncellemesi:** `barplot` ve `countplot` fonksiyonlarında `hue` parametresi tanımlanarak gelecek sürüm uyarıları (`FutureWarning`) giderilebilir.
 
 ---
 
-## 📊 Veri Analitiği Metodolojisi
+## 👩‍💻 Geliştirici
 
-```mermaid
-flowchart LR
-    A[Ham Veri Seti] --> B[Veri Temizleme & Ön İşleme]
-    B --> C[Öznitelik Mühendisliği & NumPy]
-    C --> D[Keşifçi Veri Analizi - EDA]
-    D --> E[Görselleştirme & Isı Haritaları]
-    E --> F[Yönetici Özeti & Çıktılar]
-```
-
----
-
-## 👥 Ekip ve Rol Dağılımı
-
-| Rol | Sorumlu | Temel Sorumluluklar |
-| :--- | :--- | :--- |
-| **Veri Ön İşleme Sorumlusu** | Üye 1 | Veri seti yükleme, veri yapısı inceleme, eksik & aykırı değer temizliği |
-| **Analitik Manipülasyon Sorumlusu** | Üye 2 | `groupby` & `pivot_table` sorguları, `NumPy` vektörel türetilmiş değişkenler |
-| **Görselleştirme & Raporlama Sorumlusu** | Üye 3 | `Matplotlib`/`Seaborn` grafik tasarımları, analitik yorumlar, yönetici özeti |
-
----
-
-
-Proje hakkında sorularınız veya katkı talepleriniz için lütfen repository üzerinde bir **Issue** açın ya da e-posta yoluyla iletişime geçin:
-- **E-posta:** ornek@domain.com
-- **GitHub:** [@kullanici-adi](https://github.com/kullanici-adi)
+**Esmanur Yavuz**  
+Veri Bilimi ve Analitiği Öğrencisi
