@@ -1,0 +1,301 @@
+OrderId,Product,Category,Price,Quantity,CustomerAge,City,PaymentType
+1,Tişört,Kitap,4914,5,18,Ankara,Kredi Kartı
+2,Kulaklık,Ev,2407,4,54,İstanbul,Kapıda Ödeme
+3,Tişört,Kitap,3870,5,27,İstanbul,Kredi Kartı
+4,Tişört,Giyim,1566,1,52,Antalya,Kapıda Ödeme
+5,Parfüm,Kitap,1202,4,39,Antalya,Kredi Kartı
+6,Defter,Giyim,2524,2,36,Antalya,Kapıda Ödeme
+7,Pantolon,Ev,4338,3,40,Ankara,Kapıda Ödeme
+8,Ruj,Ev,2599,3,30,İstanbul,Kredi Kartı
+9,Lamba,Kitap,4687,3,32,Antalya,Kredi Kartı
+10,Tava,Kozmetik,1297,2,29,Ankara,Havale/EFT
+11,Roman,Giyim,4333,2,22,İstanbul,Kredi Kartı
+12,Ruj,Giyim,3298,2,30,İzmir,Havale/EFT
+13,Roman,Elektronik,2831,1,66,İstanbul,Kredi Kartı
+14,Lamba,Giyim,463,3,32,Antalya,Kapıda Ödeme
+15,Kulaklık,Elektronik,4186,5,33,İstanbul,Kapıda Ödeme
+16,Parfüm,Kitap,1562,4,67,Ankara,Kapıda Ödeme
+17,Laptop,Elektronik,1915,2,58,İstanbul,Kredi Kartı
+18,Roman,Ev,2769,2,66,Bursa,Havale/EFT
+19,Tava,Giyim,3411,3,56,İstanbul,Kapıda Ödeme
+20,Tişört,Ev,2982,5,40,Antalya,Kredi Kartı
+21,Parfüm,Kozmetik,2061,3,40,İstanbul,Kredi Kartı
+22,Tişört,Kitap,4967,2,52,Bursa,Kapıda Ödeme
+23,Pantolon,Ev,3706,4,48,Antalya,Kredi Kartı
+24,Kulaklık,Kitap,355,2,56,Ankara,Kapıda Ödeme
+25,Parfüm,Kitap,4078,4,42,Antalya,Kredi Kartı
+26,Roman,Kitap,274,4,32,İstanbul,Kapıda Ödeme
+27,Ruj,Ev,3996,4,22,Antalya,Havale/EFT
+28,Defter,Kozmetik,273,4,34,İzmir,Kapıda Ödeme
+29,Tava,Kozmetik,4765,1,38,Antalya,Kapıda Ödeme
+30,Tava,Elektronik,3034,1,28,İstanbul,Kapıda Ödeme
+31,Lamba,Kitap,1877,5,63,Ankara,Kapıda Ödeme
+32,Kulaklık,Elektronik,2239,4,68,İzmir,Havale/EFT
+33,Tişört,Ev,180,1,34,Antalya,Havale/EFT
+34,Roman,Elektronik,4577,2,67,İzmir,Havale/EFT
+35,Kulaklık,Kitap,1346,3,46,Bursa,Havale/EFT
+36,Tava,Elektronik,3738,4,24,Bursa,Kapıda Ödeme
+37,Roman,Elektronik,2631,1,48,Antalya,Kredi Kartı
+38,Defter,Giyim,3369,3,39,Antalya,Kredi Kartı
+39,Tişört,Elektronik,4996,1,26,Ankara,Kredi Kartı
+40,Pantolon,Ev,2638,1,23,İzmir,Kredi Kartı
+41,Roman,Giyim,847,5,20,İstanbul,Kapıda Ödeme
+42,Parfüm,Kitap,2454,3,48,Antalya,Kredi Kartı
+43,Kulaklık,Elektronik,872,4,49,Bursa,Havale/EFT
+44,Ruj,Kozmetik,3405,5,33,Ankara,Havale/EFT
+45,Pantolon,Elektronik,2330,3,40,Bursa,Kredi Kartı
+46,Tişört,Giyim,2437,3,48,İstanbul,Kredi Kartı
+47,Lamba,Ev,2379,5,58,İstanbul,Havale/EFT
+48,Defter,Kozmetik,737,3,37,Antalya,Kredi Kartı
+49,Pantolon,Elektronik,1113,4,55,İstanbul,Kapıda Ödeme
+50,Lamba,Ev,2614,3,51,İstanbul,Havale/EFT
+51,Kulaklık,Elektronik,2060,4,57,İstanbul,Havale/EFT
+52,Roman,Kitap,1040,2,51,İstanbul,Kredi Kartı
+53,Tava,Elektronik,4732,2,51,Ankara,Kredi Kartı
+54,Laptop,Kitap,1287,1,45,İzmir,Kapıda Ödeme
+55,Ruj,Kitap,2373,4,20,İzmir,Kapıda Ödeme
+56,Kulaklık,Ev,3761,5,48,Ankara,Kredi Kartı
+57,Roman,Kozmetik,141,1,33,Ankara,Kredi Kartı
+58,Tava,Giyim,659,3,28,İstanbul,Havale/EFT
+59,Kulaklık,Kozmetik,991,2,27,Bursa,Kredi Kartı
+60,Tava,Giyim,4807,2,26,İzmir,Kapıda Ödeme
+61,Tava,Giyim,4173,2,58,İzmir,Kredi Kartı
+62,Tava,Elektronik,1806,2,65,Bursa,Kapıda Ödeme
+63,Parfüm,Giyim,524,4,18,Bursa,Kapıda Ödeme
+64,Defter,Ev,3370,3,28,Antalya,Kapıda Ödeme
+65,Roman,Kozmetik,2896,2,30,İzmir,Havale/EFT
+66,Pantolon,Ev,1412,3,46,Ankara,Kredi Kartı
+67,Parfüm,Kozmetik,4187,2,69,Antalya,Kredi Kartı
+68,Tişört,Kitap,3252,5,59,İstanbul,Kredi Kartı
+69,Laptop,Giyim,1919,2,28,Ankara,Havale/EFT
+70,Kulaklık,Ev,2091,2,20,Antalya,Kredi Kartı
+71,Parfüm,Kozmetik,1229,3,61,Bursa,Havale/EFT
+72,Parfüm,Kitap,960,5,26,Ankara,Kredi Kartı
+73,Ruj,Kozmetik,4323,2,50,Ankara,Havale/EFT
+74,Roman,Elektronik,1544,1,26,İstanbul,Kapıda Ödeme
+75,Parfüm,Ev,3077,5,53,İzmir,Havale/EFT
+76,Defter,Kozmetik,366,5,63,İzmir,Kapıda Ödeme
+77,Parfüm,Ev,4657,5,54,Antalya,Kredi Kartı
+78,Laptop,Ev,4984,2,50,Bursa,Kredi Kartı
+79,Defter,Elektronik,4282,4,20,İstanbul,Kapıda Ödeme
+80,Tava,Kitap,1952,5,48,Antalya,Havale/EFT
+81,Defter,Kozmetik,968,5,33,Bursa,Kredi Kartı
+82,Tava,Kitap,4585,5,37,Antalya,Havale/EFT
+83,Parfüm,Ev,1409,5,43,Ankara,Havale/EFT
+84,Roman,Kozmetik,1633,4,42,İstanbul,Kapıda Ödeme
+85,Defter,Kitap,2061,2,54,Bursa,Havale/EFT
+86,Tişört,Giyim,1464,3,49,İstanbul,Kapıda Ödeme
+87,Kulaklık,Kitap,2308,4,22,Bursa,Havale/EFT
+88,Kulaklık,Kozmetik,4768,3,46,Antalya,Havale/EFT
+89,Roman,Giyim,4056,5,33,İzmir,Havale/EFT
+90,Laptop,Kozmetik,4311,2,60,İstanbul,Havale/EFT
+91,Ruj,Kitap,1422,1,40,İzmir,Havale/EFT
+92,Pantolon,Elektronik,2684,1,56,İstanbul,Havale/EFT
+93,Tava,Kozmetik,1318,2,33,Ankara,Kredi Kartı
+94,Ruj,Kitap,3305,1,24,Bursa,Havale/EFT
+95,Kulaklık,Elektronik,1636,2,69,İzmir,Havale/EFT
+96,Kulaklık,Giyim,4268,4,19,İstanbul,Kredi Kartı
+97,Roman,Ev,4783,5,41,İzmir,Kredi Kartı
+98,Tava,Ev,2159,3,36,İzmir,Havale/EFT
+99,Tava,Giyim,3303,3,66,İstanbul,Kapıda Ödeme
+100,Pantolon,Elektronik,4416,3,61,Antalya,Havale/EFT
+101,Pantolon,Kozmetik,1468,4,42,İzmir,Kredi Kartı
+102,Laptop,Kozmetik,1619,3,36,Ankara,Kapıda Ödeme
+103,Ruj,Ev,4116,4,54,İzmir,Kredi Kartı
+104,Defter,Kitap,2727,4,51,Ankara,Havale/EFT
+105,Pantolon,Kozmetik,2931,4,52,Bursa,Havale/EFT
+106,Defter,Giyim,4985,5,62,Ankara,Havale/EFT
+107,Tişört,Kozmetik,2328,5,60,İzmir,Havale/EFT
+108,Tişört,Kitap,1017,3,28,İzmir,Kapıda Ödeme
+109,Pantolon,Ev,3657,2,52,Antalya,Kapıda Ödeme
+110,Tava,Kitap,1035,1,24,İstanbul,Havale/EFT
+111,Pantolon,Kitap,3202,5,18,İstanbul,Havale/EFT
+112,Laptop,Kozmetik,2771,5,25,İstanbul,Havale/EFT
+113,Laptop,Elektronik,4692,2,55,İzmir,Havale/EFT
+114,Laptop,Giyim,3283,3,60,İstanbul,Kredi Kartı
+115,Pantolon,Kitap,4517,4,51,İzmir,Kapıda Ödeme
+116,Defter,Ev,182,2,52,Ankara,Kapıda Ödeme
+117,Kulaklık,Giyim,2356,3,46,İzmir,Havale/EFT
+118,Tava,Elektronik,2971,5,27,Ankara,Kapıda Ödeme
+119,Ruj,Kitap,4968,3,39,Antalya,Havale/EFT
+120,Laptop,Ev,608,1,23,Antalya,Kredi Kartı
+121,Defter,Kitap,1488,5,40,Ankara,Havale/EFT
+122,Ruj,Kozmetik,3069,5,55,Bursa,Kapıda Ödeme
+123,Pantolon,Ev,824,3,18,İzmir,Kredi Kartı
+124,Laptop,Ev,4753,5,45,İstanbul,Kredi Kartı
+125,Pantolon,Elektronik,1514,2,41,Antalya,Kredi Kartı
+126,Tava,Giyim,1484,4,21,İzmir,Kredi Kartı
+127,Roman,Giyim,4524,2,19,İzmir,Havale/EFT
+128,Kulaklık,Giyim,3479,4,62,Bursa,Havale/EFT
+129,Tava,Elektronik,3368,5,44,İzmir,Kredi Kartı
+130,Lamba,Ev,4659,5,42,İzmir,Kredi Kartı
+131,Lamba,Ev,1685,2,29,Ankara,Kapıda Ödeme
+132,Ruj,Elektronik,3210,3,18,Bursa,Kapıda Ödeme
+133,Lamba,Kozmetik,861,1,61,İstanbul,Kapıda Ödeme
+134,Lamba,Kozmetik,2456,1,28,Bursa,Kapıda Ödeme
+135,Laptop,Kozmetik,4518,1,64,İstanbul,Kapıda Ödeme
+136,Tişört,Giyim,2384,4,55,İstanbul,Kapıda Ödeme
+137,Parfüm,Elektronik,4479,4,67,Bursa,Kredi Kartı
+138,Tişört,Kozmetik,1353,5,39,İzmir,Kapıda Ödeme
+139,Parfüm,Ev,973,5,36,Antalya,Havale/EFT
+140,Defter,Giyim,338,4,58,Antalya,Kredi Kartı
+141,Defter,Giyim,4613,5,60,Bursa,Kredi Kartı
+142,Roman,Giyim,954,5,61,İstanbul,Kredi Kartı
+143,Laptop,Kitap,1223,5,48,İstanbul,Havale/EFT
+144,Kulaklık,Kozmetik,4066,2,21,İstanbul,Havale/EFT
+145,Tava,Kitap,730,1,56,Antalya,Kredi Kartı
+146,Roman,Kitap,3169,1,62,Bursa,Havale/EFT
+147,Roman,Kozmetik,3527,3,59,Ankara,Kredi Kartı
+148,Laptop,Kozmetik,2408,3,54,Ankara,Kredi Kartı
+149,Parfüm,Kitap,3827,3,56,Ankara,Kapıda Ödeme
+150,Lamba,Kozmetik,4722,1,39,İstanbul,Kredi Kartı
+151,Ruj,Elektronik,2419,1,68,İstanbul,Kredi Kartı
+152,Defter,Kozmetik,293,4,26,İzmir,Kapıda Ödeme
+153,Parfüm,Kozmetik,3965,4,21,İzmir,Kredi Kartı
+154,Ruj,Giyim,4082,5,40,Ankara,Kredi Kartı
+155,Defter,Ev,923,1,49,İzmir,Kredi Kartı
+156,Lamba,Kozmetik,423,2,50,İstanbul,Kredi Kartı
+157,Pantolon,Elektronik,2759,3,65,İzmir,Kredi Kartı
+158,Tişört,Ev,976,2,69,Antalya,Kredi Kartı
+159,Defter,Giyim,1552,1,66,Ankara,Kapıda Ödeme
+160,Kulaklık,Kozmetik,196,1,63,Antalya,Kapıda Ödeme
+161,Parfüm,Kitap,1300,3,68,İstanbul,Kapıda Ödeme
+162,Pantolon,Kozmetik,230,2,56,Bursa,Kredi Kartı
+163,Ruj,Ev,3636,3,48,Bursa,Havale/EFT
+164,Roman,Kozmetik,3572,5,60,Antalya,Kapıda Ödeme
+165,Kulaklık,Elektronik,4511,1,36,İstanbul,Havale/EFT
+166,Lamba,Ev,3362,2,45,İstanbul,Havale/EFT
+167,Kulaklık,Elektronik,1178,2,27,Bursa,Havale/EFT
+168,Pantolon,Giyim,3028,3,58,Bursa,Kapıda Ödeme
+169,Ruj,Giyim,1341,1,68,Antalya,Havale/EFT
+170,Kulaklık,Ev,4717,2,63,İstanbul,Kapıda Ödeme
+171,Kulaklık,Ev,4638,5,38,Bursa,Kapıda Ödeme
+172,Ruj,Ev,4489,3,38,İzmir,Kredi Kartı
+173,Pantolon,Kitap,208,5,33,Antalya,Kredi Kartı
+174,Lamba,Kozmetik,488,3,51,Bursa,Kredi Kartı
+175,Parfüm,Ev,672,4,53,Antalya,Kredi Kartı
+176,Lamba,Elektronik,4216,1,32,İzmir,Kredi Kartı
+177,Kulaklık,Kitap,4984,1,41,Antalya,Kapıda Ödeme
+178,Pantolon,Giyim,3696,4,20,Ankara,Kapıda Ödeme
+179,Kulaklık,Giyim,4377,3,35,Bursa,Kredi Kartı
+180,Kulaklık,Kitap,101,3,57,Antalya,Havale/EFT
+181,Lamba,Kozmetik,946,1,56,Ankara,Kapıda Ödeme
+182,Laptop,Kitap,461,5,66,İstanbul,Havale/EFT
+183,Roman,Kitap,2013,3,61,Antalya,Kredi Kartı
+184,Laptop,Giyim,4787,1,33,Antalya,Havale/EFT
+185,Roman,Elektronik,4478,4,41,İstanbul,Kredi Kartı
+186,Lamba,Kitap,883,2,41,Antalya,Kredi Kartı
+187,Tava,Elektronik,1378,3,39,Ankara,Havale/EFT
+188,Lamba,Ev,2574,4,37,Bursa,Kapıda Ödeme
+189,Roman,Giyim,2194,2,64,Ankara,Kapıda Ödeme
+190,Defter,Giyim,2327,4,18,İstanbul,Kapıda Ödeme
+191,Parfüm,Kitap,1610,1,67,İstanbul,Havale/EFT
+192,Tava,Ev,4280,2,25,İzmir,Havale/EFT
+193,Parfüm,Ev,3524,2,22,Antalya,Kredi Kartı
+194,Ruj,Elektronik,1914,2,44,Antalya,Havale/EFT
+195,Defter,Giyim,697,5,20,Ankara,Kredi Kartı
+196,Pantolon,Ev,1659,2,64,İstanbul,Havale/EFT
+197,Tava,Giyim,4806,4,49,Antalya,Kapıda Ödeme
+198,Kulaklık,Kitap,234,1,34,İzmir,Kredi Kartı
+199,Roman,Giyim,3234,1,41,İzmir,Kapıda Ödeme
+200,Roman,Ev,2543,2,28,Bursa,Kredi Kartı
+201,Kulaklık,Kitap,2893,4,18,İzmir,Havale/EFT
+202,Laptop,Kozmetik,892,5,31,İzmir,Havale/EFT
+203,Laptop,Kozmetik,3015,2,65,İstanbul,Kredi Kartı
+204,Parfüm,Ev,2998,3,39,Bursa,Kapıda Ödeme
+205,Ruj,Kitap,1280,4,43,Ankara,Havale/EFT
+206,Tişört,Ev,3363,1,45,İstanbul,Kapıda Ödeme
+207,Defter,Ev,4777,1,59,İzmir,Havale/EFT
+208,Tava,Kitap,3655,4,36,İzmir,Kredi Kartı
+209,Defter,Giyim,1938,1,44,Antalya,Kredi Kartı
+210,Kulaklık,Elektronik,3333,4,51,Ankara,Kapıda Ödeme
+211,Roman,Elektronik,4214,1,26,Ankara,Havale/EFT
+212,Kulaklık,Giyim,4480,1,49,İstanbul,Kredi Kartı
+213,Pantolon,Kitap,3765,1,64,Bursa,Havale/EFT
+214,Pantolon,Kitap,4668,1,69,İstanbul,Kapıda Ödeme
+215,Kulaklık,Elektronik,3456,1,30,Antalya,Havale/EFT
+216,Ruj,Kitap,1000,4,64,İstanbul,Havale/EFT
+217,Laptop,Giyim,1478,4,43,Ankara,Kapıda Ödeme
+218,Kulaklık,Ev,2973,2,57,İzmir,Kapıda Ödeme
+219,Roman,Elektronik,1297,3,32,Bursa,Havale/EFT
+220,Laptop,Giyim,386,2,64,İstanbul,Kredi Kartı
+221,Lamba,Giyim,764,2,40,İzmir,Havale/EFT
+222,Ruj,Kitap,2163,2,53,Antalya,Havale/EFT
+223,Defter,Kozmetik,1759,5,18,Bursa,Kapıda Ödeme
+224,Defter,Elektronik,4226,1,47,Bursa,Kredi Kartı
+225,Pantolon,Ev,4148,3,39,İstanbul,Havale/EFT
+226,Roman,Elektronik,2843,4,49,İstanbul,Kapıda Ödeme
+227,Tava,Giyim,1308,5,60,Bursa,Kredi Kartı
+228,Roman,Kitap,3489,1,67,İzmir,Havale/EFT
+229,Laptop,Giyim,4111,5,45,İstanbul,Kredi Kartı
+230,Lamba,Ev,3207,3,50,Ankara,Kapıda Ödeme
+231,Defter,Elektronik,1789,4,66,Bursa,Kredi Kartı
+232,Kulaklık,Kozmetik,2330,1,35,Antalya,Kredi Kartı
+233,Ruj,Ev,3001,5,33,Bursa,Havale/EFT
+234,Kulaklık,Elektronik,3561,3,25,Ankara,Kapıda Ödeme
+235,Laptop,Kozmetik,3386,1,53,Bursa,Kredi Kartı
+236,Ruj,Ev,1811,5,41,İzmir,Kapıda Ödeme
+237,Parfüm,Giyim,3858,4,57,Ankara,Havale/EFT
+238,Laptop,Elektronik,569,1,37,İzmir,Havale/EFT
+239,Tava,Kitap,3259,1,38,Bursa,Kapıda Ödeme
+240,Pantolon,Elektronik,2543,5,49,İzmir,Havale/EFT
+241,Tava,Kozmetik,2158,4,39,İzmir,Havale/EFT
+242,Pantolon,Kitap,2642,2,51,Bursa,Kredi Kartı
+243,Ruj,Elektronik,4694,3,29,Bursa,Kredi Kartı
+244,Defter,Ev,2323,1,38,Bursa,Kredi Kartı
+245,Ruj,Elektronik,1456,2,43,İstanbul,Kredi Kartı
+246,Defter,Kozmetik,944,2,24,Antalya,Havale/EFT
+247,Tava,Elektronik,4471,1,21,Antalya,Havale/EFT
+248,Lamba,Kitap,834,4,35,Bursa,Kredi Kartı
+249,Ruj,Ev,4984,4,66,Ankara,Kapıda Ödeme
+250,Defter,Kozmetik,360,4,23,İstanbul,Havale/EFT
+251,Tava,Ev,2124,5,27,İstanbul,Kapıda Ödeme
+252,Defter,Ev,3481,3,54,Antalya,Havale/EFT
+253,Laptop,Ev,4630,5,43,Bursa,Kredi Kartı
+254,Roman,Kozmetik,904,1,67,Ankara,Kapıda Ödeme
+255,Tişört,Elektronik,3969,4,18,İzmir,Havale/EFT
+256,Ruj,Kitap,559,5,35,Antalya,Kredi Kartı
+257,Parfüm,Giyim,1446,3,21,Antalya,Kapıda Ödeme
+258,Pantolon,Ev,2348,2,59,Antalya,Kredi Kartı
+259,Lamba,Ev,3199,2,41,Antalya,Kredi Kartı
+260,Lamba,Kozmetik,4834,1,38,Antalya,Kapıda Ödeme
+261,Kulaklık,Giyim,3823,3,65,Antalya,Kredi Kartı
+262,Parfüm,Kozmetik,2430,1,25,Bursa,Havale/EFT
+263,Lamba,Elektronik,3511,3,47,Bursa,Kapıda Ödeme
+264,Tava,Ev,3583,5,29,İzmir,Kredi Kartı
+265,Roman,Elektronik,2310,1,23,İstanbul,Kredi Kartı
+266,Tişört,Elektronik,3761,2,39,Bursa,Kredi Kartı
+267,Pantolon,Elektronik,2821,3,49,İstanbul,Kapıda Ödeme
+268,Tişört,Giyim,4537,4,38,İstanbul,Kapıda Ödeme
+269,Kulaklık,Elektronik,1845,4,44,İstanbul,Kapıda Ödeme
+270,Roman,Kozmetik,4058,2,38,Antalya,Havale/EFT
+271,Ruj,Giyim,1909,4,68,Antalya,Kapıda Ödeme
+272,Pantolon,Elektronik,4714,3,40,Bursa,Kredi Kartı
+273,Pantolon,Kitap,1027,2,19,Ankara,Kapıda Ödeme
+274,Tişört,Kozmetik,1465,3,52,İstanbul,Kredi Kartı
+275,Pantolon,Elektronik,3555,5,35,Ankara,Kredi Kartı
+276,Kulaklık,Elektronik,1004,3,36,Ankara,Kredi Kartı
+277,Defter,Elektronik,1383,5,27,Bursa,Havale/EFT
+278,Laptop,Elektronik,1916,5,45,Antalya,Kapıda Ödeme
+279,Ruj,Kozmetik,2155,5,20,Bursa,Kredi Kartı
+280,Parfüm,Giyim,2161,4,42,Antalya,Kapıda Ödeme
+281,Ruj,Elektronik,3201,4,48,İzmir,Kapıda Ödeme
+282,Ruj,Giyim,3691,4,36,Ankara,Havale/EFT
+283,Roman,Kitap,527,3,56,İstanbul,Havale/EFT
+284,Parfüm,Elektronik,3754,3,27,Ankara,Kapıda Ödeme
+285,Kulaklık,Giyim,2274,3,18,Antalya,Kapıda Ödeme
+286,Pantolon,Kozmetik,151,1,23,Bursa,Kredi Kartı
+287,Ruj,Elektronik,3804,5,46,Antalya,Kapıda Ödeme
+288,Lamba,Kitap,4441,5,22,İzmir,Kredi Kartı
+289,Laptop,Giyim,4953,5,69,Antalya,Kapıda Ödeme
+290,Tişört,Kozmetik,4106,4,61,Bursa,Kredi Kartı
+291,Ruj,Elektronik,4490,1,23,İstanbul,Havale/EFT
+292,Defter,Ev,1310,5,56,Ankara,Kapıda Ödeme
+293,Roman,Ev,4219,5,46,Ankara,Kapıda Ödeme
+294,Defter,Ev,4389,2,58,Antalya,Kredi Kartı
+295,Laptop,Elektronik,3579,5,55,Ankara,Havale/EFT
+296,Defter,Kozmetik,4331,4,18,Antalya,Kapıda Ödeme
+297,Kulaklık,Giyim,4640,2,21,İstanbul,Havale/EFT
+298,Roman,Ev,3862,2,19,Ankara,Kapıda Ödeme
+299,Tava,Ev,3870,4,36,Ankara,Kredi Kartı
+300,Tişört,Elektronik,3694,2,54,Ankara,Kredi Kartı
