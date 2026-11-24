@@ -128,10 +128,8 @@ Projeyi yerel ortamınızda çalıştırmak için aşağıdaki adımları izleye
 
 ### 1. Repoyu Klonlayın
 ```bash
-git clone https://github.com/<esmanuryavuz908>/<e-ticaret-satis-analizi-python-sql
->.git
-cd <e-ticaret-satis-analizi-python-sql
->
+git clone https://github.com/esmanuryavuz908/e-ticaret-satis-analizi-python-sql.git
+cd e-ticaret-satis-analizi-python-sql
 ```
 
 ### 2. Gerekli Kütüphaneleri Yükleyin
